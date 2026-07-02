@@ -28,7 +28,7 @@ export default function Hero() {
           <h1 className="text-4xl leading-[1.08] font-extrabold tracking-tight text-balance text-ink-900 sm:text-5xl lg:text-6xl">
             Seu celular com defeito?
             <br />
-            A gente <span className="text-brand-500">resolve rápido</span>.
+            A gente <span className="text-brand-500 whitespace-nowrap">resolve rápido</span>.
           </h1>
 
           <p className="max-w-lg text-lg leading-relaxed text-ink-500">
