@@ -12,10 +12,10 @@ export default function Testimonials() {
         <SectionHeading
           eyebrow="Depoimentos"
           title="O que nossos clientes dizem"
-          description="Depoimentos ilustrativos — substitua pelos relatos reais dos seus clientes."
+          description="Avaliações reais de clientes, direto do nosso perfil no Google Maps."
         />
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <FadeIn key={testimonial.name} delay={index * 0.08}>
               <Card className="flex h-full flex-col gap-4">

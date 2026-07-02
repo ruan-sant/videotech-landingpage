@@ -6,39 +6,53 @@ export interface Testimonial {
   initials: string;
 }
 
-// Depoimentos fictícios para fins de demonstração de layout.
-// TODO: substituir por depoimentos reais de clientes (com autorização) antes de publicar.
+// Depoimentos reais de clientes, extraídos do perfil da loja no Google Maps.
 export const testimonials: Testimonial[] = [
   {
-    name: 'Carla Mendes',
-    role: 'Cliente desde 2022',
-    quote:
-      'Troquei a tela do meu celular em menos de uma hora e o preço foi bem justo. Atendimento super atencioso.',
-    rating: 5,
-    initials: 'CM',
-  },
-  {
-    name: 'Rafael Souza',
+    name: 'Tatiane Farias',
     role: 'Cliente Video Tech',
     quote:
-      'Meu notebook não ligava mais e eu já tinha desistido. Os técnicos conseguiram recuperar tudo e ainda me explicaram o problema.',
+      'Atendimento espetacular, hoje precisei de um serviço em meu celular e fui muito bem atendida e meu problema resolvido rapidamente.',
     rating: 5,
-    initials: 'RS',
+    initials: 'TF',
   },
   {
-    name: 'Juliana Alves',
+    name: 'Kristofer Padilha',
     role: 'Cliente Video Tech',
     quote:
-      'Comprei uma capinha e uma película e o atendimento foi muito rápido. Loja organizada e com bastante variedade.',
+      'Produtos de altíssima qualidade, excelente atendimento, com os melhores preços, muito obrigado!! Recomendo 100%. Ah e ainda presta assistência, muito top.',
     rating: 5,
-    initials: 'JA',
+    initials: 'KP',
   },
   {
-    name: 'Marcos Vinícius',
-    role: 'Cliente desde 2021',
+    name: 'André Fidelis',
+    role: 'Cliente Video Tech',
     quote:
-      'Já troquei bateria de dois aparelhos aqui e sempre saio satisfeito. Recomendo de olhos fechados.',
+      'Loja super boa, recomendo muito, funcionários super educados, atenciosos, precisava arrumar a tela do meu celular, foi consertado no mesmo dia, com um preço abaixo da média, super recomendo.',
     rating: 5,
-    initials: 'MV',
+    initials: 'AF',
+  },
+  {
+    name: 'Paola Avelar',
+    role: 'Cliente Video Tech',
+    quote:
+      'Já fui várias vezes na loja, e tudo o que eu preciso ali no Maracanã eu acho nessa loja, não preciso ir no centro de Curitiba pra comprar. Já fiz conserto do meu celular também e foi rápido o serviço e ficou bem bom.',
+    rating: 5,
+    initials: 'PA',
+  },
+  {
+    name: 'Ana Caroline Toledo',
+    role: 'Cliente Video Tech',
+    quote: 'Atendimento incrível, ótimos produtos. O melhor da região.',
+    rating: 5,
+    initials: 'AT',
+  },
+  {
+    name: 'Maria Telma',
+    role: 'Cliente Video Tech',
+    quote:
+      'Atendimento profissional, trabalham com vendas de acessórios para celular e dispositivos eletrônicos. Contam também com assistência técnica para celulares, com preço acessível.',
+    rating: 5,
+    initials: 'MT',
   },
 ];
