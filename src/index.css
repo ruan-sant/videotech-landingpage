@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  /* Brand palette — inspired by the Video Tech storefront signage */
+  --color-brand-50: #eefdf2;
+  --color-brand-100: #d5fadf;
+  --color-brand-200: #aef2c1;
+  --color-brand-300: #74e79a;
+  --color-brand-400: #3fd873;
+  --color-brand-500: #1abf54;
+  --color-brand-600: #0f9d43;
+  --color-brand-700: #0d7c38;
+  --color-brand-800: #0e6231;
+  --color-brand-900: #0d512b;
+  --color-brand-950: #032d16;
+
+  --color-ink-50: #f5f6f6;
+  --color-ink-100: #e6e7e8;
+  --color-ink-200: #cbccce;
+  --color-ink-300: #a6a8ab;
+  --color-ink-400: #7c7f83;
+  --color-ink-500: #5f6266;
+  --color-ink-600: #4a4c50;
+  --color-ink-700: #3a3c3f;
+  --color-ink-800: #232426;
+  --color-ink-900: #17181a;
+  --color-ink-950: #0a0a0b;
+
+  --shadow-soft: 0 2px 8px rgba(10, 10, 11, 0.04), 0 12px 32px rgba(10, 10, 11, 0.08);
+  --shadow-soft-lg: 0 8px 24px rgba(10, 10, 11, 0.06), 0 24px 56px rgba(10, 10, 11, 0.12);
+  --shadow-brand: 0 12px 28px -8px rgba(15, 157, 67, 0.45);
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-marquee: marquee 28s linear infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-white);
+  color: var(--color-ink-800);
+  font-feature-settings: 'ss01' on, 'cv01' on;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-brand-200);
+  color: var(--color-ink-900);
+}
