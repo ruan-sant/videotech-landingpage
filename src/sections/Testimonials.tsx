@@ -15,12 +15,12 @@ export default function Testimonials() {
           description="Avaliações reais de clientes, direto do nosso perfil no Google Maps."
         />
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="columns-1 gap-6 sm:columns-2 lg:columns-3">
           {testimonials.map((testimonial, index) => (
-            <FadeIn key={testimonial.name} delay={index * 0.08}>
-              <Card className="flex h-full flex-col gap-4">
+            <FadeIn key={testimonial.name} delay={index * 0.08} className="mb-6 break-inside-avoid">
+              <Card className="flex flex-col gap-4">
                 <Quote className="h-7 w-7 text-brand-300" />
-                <p className="grow text-sm leading-relaxed text-ink-600">“{testimonial.quote}”</p>
+                <p className="text-sm leading-relaxed text-ink-600">“{testimonial.quote}”</p>
                 <div className="flex text-brand-500">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
                     <Star key={i} className="h-3.5 w-3.5 fill-current" />
