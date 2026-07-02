@@ -12,7 +12,7 @@ export const STORE_INFO = {
     { days: 'Sábado', time: '09h às 13h' },
   ],
   social: {
-    instagram: 'https://instagram.com/videotech',
+    instagram: 'https://www.instagram.com/videotechmaracana',
   },
 };
 

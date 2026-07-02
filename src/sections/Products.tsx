@@ -31,7 +31,7 @@ export default function Products() {
 
         <FadeIn className="flex flex-col items-center gap-4 text-center">
           <p className="text-sm text-ink-500">
-            Também trabalhamos com headsets, controles e diversos outros acessórios. Consulte
+            Também trabalhamos com diversos outros acessórios. Consulte
             disponibilidade.
           </p>
           <Button

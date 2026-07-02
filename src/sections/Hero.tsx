@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, MapPin, ShieldCheck, Star, Wrench } from 'lucide-react';
+import { ArrowRight, MapPin, ShieldCheck, Wrench } from 'lucide-react';
 import Container from '@/components/Container';
 import Button from '@/components/Button';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
@@ -52,14 +52,6 @@ export default function Hero() {
           </div>
 
           <div className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-4">
-            <div className="flex items-center gap-2">
-              <div className="flex text-brand-500">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-current" />
-                ))}
-              </div>
-              <span className="text-sm font-medium text-ink-600">Avaliação 5.0</span>
-            </div>
             <div className="flex items-center gap-2 text-sm font-medium text-ink-600">
               <ShieldCheck className="h-4.5 w-4.5 text-brand-500" />
               Garantia em todos os serviços
