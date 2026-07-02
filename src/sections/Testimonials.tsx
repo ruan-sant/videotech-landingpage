@@ -12,7 +12,7 @@ export default function Testimonials() {
         <SectionHeading
           eyebrow="Depoimentos"
           title="O que nossos clientes dizem"
-          description="Avaliações reais de clientes, direto do nosso perfil no Google Maps."
+          description="Algumas Avaliações dos nossos clientes em outras plataformas."
         />
 
         <div className="columns-1 gap-6 sm:columns-2 lg:columns-3">

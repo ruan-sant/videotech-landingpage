@@ -2,6 +2,9 @@ export const WHATSAPP_NUMBER = '554191165920';
 
 export const MAPS_URL = 'https://maps.app.goo.gl/yaGu7fE3nK1TMgvD9';
 
+// Ano em que a loja começou a operar, usado para calcular "há X anos" dinamicamente.
+export const FOUNDING_YEAR = 2018;
+
 export const STORE_INFO = {
   name: 'Video Tech',
   phone: '(41) 3055-3050',
@@ -9,12 +12,16 @@ export const STORE_INFO = {
   address: 'Rua Pasteur, 13 — Calçadão Terminal do Maracanã, Alto Maracanã, Colombo - PR, 83408-020',
   hours: [
     { days: 'Segunda a Sexta', time: '09h às 19h' },
-    { days: 'Sábado', time: '09h às 13h' },
+    { days: 'Sábado', time: '09h às 16h' },
   ],
   social: {
     instagram: 'https://www.instagram.com/videotechmaracana',
   },
 };
+
+export function getYearsInBusiness(): number {
+  return new Date().getFullYear() - FOUNDING_YEAR;
+}
 
 export function buildWhatsappLink(message: string): string {
   const encoded = encodeURIComponent(message);

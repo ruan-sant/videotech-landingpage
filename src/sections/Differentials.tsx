@@ -2,8 +2,11 @@ import Container from '@/components/Container';
 import SectionHeading from '@/components/SectionHeading';
 import FadeIn from '@/components/FadeIn';
 import { differentials } from '@/data/differentials';
+import { getYearsInBusiness } from '@/utils/whatsapp';
 
 export default function Differentials() {
+  const yearsInBusiness = getYearsInBusiness();
+
   return (
     <section id="diferenciais" className="relative overflow-hidden bg-ink-950 py-20 lg:py-28">
       <div className="pointer-events-none absolute top-0 right-0 h-96 w-96 rounded-full bg-brand-500/10 blur-3xl" />
@@ -13,7 +16,7 @@ export default function Differentials() {
         <SectionHeading
           eyebrow="Diferenciais"
           title="Por que escolher a Video Tech"
-          description="Mais de uma década cuidando dos aparelhos da nossa vizinhança com transparência e agilidade."
+          description={`Há ${yearsInBusiness} anos cuidando dos aparelhos da nossa vizinhança com transparência e agilidade.`}
           light
         />
 
