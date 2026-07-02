@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, ShieldCheck, Star, Wrench } from 'lucide-react';
+import { ArrowRight, MapPin, ShieldCheck, Star, Wrench } from 'lucide-react';
 import Container from '@/components/Container';
 import Button from '@/components/Button';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
-import { buildWhatsappLink, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
+import { buildWhatsappLink, MAPS_URL, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
 import storefront from '@/assets/storefront.jpg';
 
 export default function Hero() {
@@ -73,14 +73,26 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           className="relative"
         >
-          <div className="relative overflow-hidden rounded-[2rem] border border-ink-100 shadow-soft-lg">
+          <a
+            href={MAPS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ver a localização da Video Tech no Google Maps"
+            className="group relative block overflow-hidden rounded-[2rem] border border-ink-100 shadow-soft-lg"
+          >
             {/* Substituir por foto oficial em alta resolução da fachada/loja */}
             <img
               src={storefront}
               alt="Fachada da loja Video Tech — Eletrônicos, Celulares e Informática"
-              className="aspect-4/5 w-full object-cover sm:aspect-3/4"
+              className="aspect-4/5 w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105 sm:aspect-3/4"
             />
-          </div>
+            <div className="absolute inset-0 flex items-end justify-center bg-ink-950/0 pb-6 opacity-0 transition-all duration-300 group-hover:bg-ink-950/30 group-hover:opacity-100">
+              <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-ink-900 shadow-soft-lg">
+                <MapPin className="h-4 w-4 text-brand-500" />
+                Ver no Google Maps
+              </span>
+            </div>
+          </a>
 
           <motion.div
             initial={{ opacity: 0, y: 16 }}

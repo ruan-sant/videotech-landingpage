@@ -3,8 +3,7 @@ import Container from './Container';
 import Logo from './Logo';
 import WhatsAppIcon from './icons/WhatsAppIcon';
 import InstagramIcon from './icons/InstagramIcon';
-import FacebookIcon from './icons/FacebookIcon';
-import { buildWhatsappLink, STORE_INFO, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
+import { buildWhatsappLink, MAPS_URL, STORE_INFO, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
 
 const NAV_LINKS = [
   { label: 'Serviços', href: '#servicos' },
@@ -33,15 +32,6 @@ export default function Footer() {
               className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-ink-300 transition-colors hover:bg-brand-500 hover:text-white"
             >
               <InstagramIcon className="h-4.5 w-4.5" />
-            </a>
-            <a
-              href={STORE_INFO.social.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook da Video Tech"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-ink-300 transition-colors hover:bg-brand-500 hover:text-white"
-            >
-              <FacebookIcon className="h-4.5 w-4.5" />
             </a>
             <a
               href={buildWhatsappLink(WHATSAPP_MESSAGES.general)}
@@ -90,8 +80,14 @@ export default function Footer() {
             </li>
             <li className="flex items-start gap-2.5">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
-              {/* TODO: substituir pelo endereço real da loja */}
-              <span>{STORE_INFO.address}</span>
+              <a
+                href={MAPS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-brand-400"
+              >
+                {STORE_INFO.address}
+              </a>
             </li>
           </ul>
         </div>

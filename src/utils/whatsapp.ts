@@ -1,19 +1,19 @@
 // TODO: substituir pelo número real da loja no formato internacional (DDI+DDD+número, apenas dígitos)
 export const WHATSAPP_NUMBER = '5541930553050';
 
+export const MAPS_URL = 'https://maps.app.goo.gl/yaGu7fE3nK1TMgvD9';
+
 export const STORE_INFO = {
   name: 'Video Tech',
   phone: '(41) 3055-3050',
   whatsappDisplay: '(41) 93055-3050',
-  // TODO: substituir pelo endereço real da loja
-  address: 'Rua Exemplo, 123 — Bairro, Curitiba - PR',
+  address: 'Rua Pasteur, 13 — Calçadão Terminal do Maracanã, Alto Maracanã, Colombo - PR, 83408-020',
   hours: [
     { days: 'Segunda a Sexta', time: '09h às 19h' },
     { days: 'Sábado', time: '09h às 13h' },
   ],
   social: {
     instagram: 'https://instagram.com/videotech',
-    facebook: 'https://facebook.com/videotech',
   },
 };
 
