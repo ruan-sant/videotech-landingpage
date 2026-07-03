@@ -3,7 +3,6 @@
 @theme {
   --font-sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
 
-  /* Brand palette — inspired by the Video Tech storefront signage */
   --color-brand-50: #eefdf2;
   --color-brand-100: #d5fadf;
   --color-brand-200: #aef2c1;

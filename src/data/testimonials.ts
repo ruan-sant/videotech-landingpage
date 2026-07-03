@@ -6,7 +6,6 @@ export interface Testimonial {
   initials: string;
 }
 
-// Depoimentos reais de clientes, extraídos do perfil da loja no Google Maps.
 export const testimonials: Testimonial[] = [
   {
     name: 'Tatiane Farias',

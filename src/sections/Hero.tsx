@@ -4,12 +4,11 @@ import Container from '@/components/Container';
 import Button from '@/components/Button';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
 import { buildWhatsappLink, MAPS_URL, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
-import storefront from '@/assets/storefront.jpg';
+import storefront from '@/assets/storefront.jpeg';
 
 export default function Hero() {
   return (
     <section id="topo" className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-28">
-      {/* Blobs decorativos */}
       <div className="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-brand-100/70 blur-3xl" />
       <div className="pointer-events-none absolute top-1/2 -left-40 h-80 w-80 rounded-full bg-brand-50 blur-3xl" />
 
@@ -70,9 +69,8 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Ver a localização da Video Tech no Google Maps"
-            className="group relative block overflow-hidden rounded-[2rem] border border-ink-100 shadow-soft-lg"
+            className="group relative block overflow-hidden rounded-4xl border border-ink-100 shadow-soft-lg"
           >
-            {/* Substituir por foto oficial em alta resolução da fachada/loja */}
             <img
               src={storefront}
               alt="Fachada da loja Video Tech — Eletrônicos, Celulares e Informática"

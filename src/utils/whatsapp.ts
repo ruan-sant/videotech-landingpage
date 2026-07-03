@@ -2,7 +2,6 @@ export const WHATSAPP_NUMBER = '554191165920';
 
 export const MAPS_URL = 'https://maps.app.goo.gl/yaGu7fE3nK1TMgvD9';
 
-// Ano em que a loja começou a operar, usado para calcular "há X anos" dinamicamente.
 export const FOUNDING_YEAR = 2018;
 
 export const STORE_INFO = {
