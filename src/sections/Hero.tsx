@@ -3,10 +3,12 @@ import { ArrowRight, MapPin, ShieldCheck, Wrench } from 'lucide-react';
 import Container from '@/components/Container';
 import Button from '@/components/Button';
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon';
-import { buildWhatsappLink, MAPS_URL, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
+import { buildWhatsappLink, isStoreOpenNow, MAPS_URL, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
 import storefront from '@/assets/storefront.jpeg';
 
 export default function Hero() {
+  const isOpen = isStoreOpenNow();
+
   return (
     <section id="topo" className="relative overflow-hidden bg-white pt-32 pb-20 lg:pt-40 lg:pb-28">
       <div className="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-brand-100/70 blur-3xl" />
@@ -105,9 +107,13 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.75 }}
             className="absolute -top-5 -right-4 rounded-2xl border border-ink-100 bg-white px-4 py-3 shadow-soft-lg sm:-right-8"
           >
-            <p className="text-xs font-semibold text-ink-500">Aberto agora</p>
-            <p className="flex items-center gap-1.5 text-sm font-bold text-brand-600">
-              <span className="h-2 w-2 rounded-full bg-brand-500" />
+            <p className="text-xs font-semibold text-ink-500">
+              {isOpen ? 'Aberto agora' : 'Fechado agora'}
+            </p>
+            <p
+              className={`flex items-center gap-1.5 text-sm font-bold ${isOpen ? 'text-brand-600' : 'text-red-600'}`}
+            >
+              <span className={`h-2 w-2 rounded-full ${isOpen ? 'bg-brand-500' : 'bg-red-500'}`} />
               Loja física
             </p>
           </motion.div>
