@@ -1,11 +1,11 @@
-export const WHATSAPP_NUMBER = '554191165920';
+export const WHATSAPP_NUMBER = '554130553050';
 
 export const MAPS_URL = 'https://maps.app.goo.gl/yaGu7fE3nK1TMgvD9';
 
 export const STORE_INFO = {
   name: 'Video Tech',
   phone: '(41) 3055-3050',
-  whatsappDisplay: '(41) 9116-5920',
+  whatsappDisplay: '(41) 3055-3050',
   address: 'Rua Pasteur, 13 — Calçadão Terminal do Maracanã, Alto Maracanã, Colombo - PR, 83408-020',
   hours: [
     { days: 'Segunda a Sexta', time: '09h às 19h' },
