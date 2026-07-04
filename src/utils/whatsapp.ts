@@ -2,8 +2,6 @@ export const WHATSAPP_NUMBER = '554191165920';
 
 export const MAPS_URL = 'https://maps.app.goo.gl/yaGu7fE3nK1TMgvD9';
 
-export const FOUNDING_YEAR = 2018;
-
 export const STORE_INFO = {
   name: 'Video Tech',
   phone: '(41) 3055-3050',
@@ -17,10 +15,6 @@ export const STORE_INFO = {
     instagram: 'https://www.instagram.com/videotechmaracana',
   },
 };
-
-export function getYearsInBusiness(): number {
-  return new Date().getFullYear() - FOUNDING_YEAR;
-}
 
 const STORE_TIMEZONE = 'America/Sao_Paulo';
 

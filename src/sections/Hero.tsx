@@ -90,7 +90,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="absolute -bottom-6 -left-6 flex items-center gap-3 rounded-2xl border border-ink-100 bg-white p-4 shadow-soft-lg sm:-left-10"
+            className="absolute bottom-3 left-3 flex items-center gap-3 rounded-2xl border border-ink-100 bg-white p-4 shadow-soft-lg lg:-bottom-6 lg:-left-10"
           >
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-500/10 text-brand-600">
               <ShieldCheck className="h-5.5 w-5.5" />
@@ -105,7 +105,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: -16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.75 }}
-            className="absolute -top-5 -right-4 rounded-2xl border border-ink-100 bg-white px-4 py-3 shadow-soft-lg sm:-right-8"
+            className="absolute top-3 right-3 rounded-2xl border border-ink-100 bg-white px-4 py-3 shadow-soft-lg lg:-top-5 lg:-right-8"
           >
             <p className="text-xs font-semibold text-ink-500">
               {isOpen ? 'Aberto agora' : 'Fechado agora'}

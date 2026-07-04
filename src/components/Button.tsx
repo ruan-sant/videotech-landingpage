@@ -36,7 +36,7 @@ export default function Button({
   return (
     <a
       className={clsx(
-        'group inline-flex items-center justify-center gap-2 rounded-full font-semibold whitespace-nowrap transition-all duration-200 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
+        'group inline-flex items-center justify-center gap-2 rounded-full text-center font-semibold transition-all duration-200 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
         variantClasses[variant],
         sizeClasses[size],
         className,
